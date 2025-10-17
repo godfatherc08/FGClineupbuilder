@@ -14,7 +14,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1a5f3a 0%, #0d3d25 50%, #1a5f3a 100%);
+            background: linear-gradient(135deg, #49986d 0%, #25b6dd 50%, #49986d 100%);
             min-height: 100vh;
             padding: 20px;
             color: #fff;
@@ -46,15 +46,15 @@
 
         .subtitle {
             font-size: 1.3em;
-            color: #b8e6d5;
+            color: #fff;
             font-weight: 600;
             margin-bottom: 5px;
         }
 
         .campaign-badge {
             display: inline-block;
-            background: linear-gradient(45deg, #fff, #e8e8e8);
-            color: #1a5f3a;
+            background: linear-gradient(45deg, #eda274, #25b6dd);
+            color: #fff;
             padding: 10px 25px;
             border-radius: 25px;
             font-weight: bold;
@@ -109,10 +109,10 @@
         }
 
         .sidebar h2 {
-            color: #1a5f3a;
+            color: #49986d;
             font-size: 1.5em;
             margin-bottom: 20px;
-            border-bottom: 3px solid #1a5f3a;
+            border-bottom: 3px solid #49986d;
             padding-bottom: 10px;
         }
 
@@ -126,7 +126,7 @@
 
         .input-group label {
             display: block;
-            color: #1a5f3a;
+            color: #49986d;
             font-weight: 600;
             margin-bottom: 5px;
             font-size: 0.9em;
@@ -135,7 +135,7 @@
         .input-group input[type="text"] {
             width: 100%;
             padding: 12px;
-            border: 2px solid #1a5f3a;
+            border: 2px solid #49986d;
             border-radius: 10px;
             font-size: 1em;
             transition: all 0.3s;
@@ -143,8 +143,8 @@
 
         .input-group input[type="text"]:focus {
             outline: none;
-            border-color: #0d3d25;
-            box-shadow: 0 0 10px rgba(26, 95, 58, 0.3);
+            border-color: #25b6dd;
+            box-shadow: 0 0 10px rgba(37, 182, 221, 0.3);
         }
 
         .upload-section {
@@ -152,17 +152,17 @@
             padding: 15px;
             background: #f0f9f4;
             border-radius: 10px;
-            border: 2px dashed #1a5f3a;
+            border: 2px dashed #49986d;
         }
 
         .info-text {
-            color: #1a5f3a;
+            color: #49986d;
             font-size: 0.9em;
             line-height: 1.5;
             padding: 10px;
             background: #fff;
             border-radius: 8px;
-            border-left: 4px solid #1a5f3a;
+            border-left: 4px solid #eda274;
         }
 
         input[type="file"] {
@@ -173,17 +173,17 @@
             display: block;
             padding: 10px;
             background: #fff;
-            border: 2px solid #1a5f3a;
+            border: 2px solid #49986d;
             border-radius: 8px;
             text-align: center;
             cursor: pointer;
             transition: all 0.3s;
-            color: #1a5f3a;
+            color: #49986d;
             font-weight: 600;
         }
 
         .custom-file-upload:hover {
-            background: #1a5f3a;
+            background: #49986d;
             color: #fff;
         }
 
@@ -207,7 +207,7 @@
         }
 
         .field {
-            background: linear-gradient(180deg, #2d8f5f 0%, #1a5f3a 50%, #2d8f5f 100%);
+            background: linear-gradient(180deg, #49986d 0%, #25b6dd 50%, #49986d 100%);
             border-radius: 15px;
             padding: 40px 20px;
             position: relative;
@@ -268,7 +268,7 @@
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #fff, #e8e8e8);
+            background: linear-gradient(135deg, #eda274, #fff);
             border: 4px solid #fff;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
             display: flex;
@@ -276,7 +276,7 @@
             justify-content: center;
             margin: 0 auto 10px;
             font-size: 2.5em;
-            color: #1a5f3a;
+            color: #49986d;
             font-weight: bold;
             overflow: hidden;
             position: relative;
@@ -288,15 +288,25 @@
             object-fit: cover;
         }
 
+        .robot-slot .player-avatar {
+            background: linear-gradient(135deg, #674719, #eda274);
+            border-color: #674719;
+        }
+
         .player-name {
             background: rgba(255, 255, 255, 0.95);
-            color: #1a5f3a;
+            color: #49986d;
             padding: 8px 12px;
             border-radius: 8px;
             font-weight: 600;
             font-size: 0.9em;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             border: 2px solid #fff;
+        }
+
+        .robot-slot .player-name {
+            background: #674719;
+            color: #fff;
         }
 
         .add-player-icon {
@@ -310,17 +320,17 @@
             transform: scale(1.1);
         }
 
-        .flag-preview, .robot-preview {
+        .flag-preview {
             width: 80px;
             height: 50px;
-            border: 2px solid #1a5f3a;
+            border: 2px solid #49986d;
             border-radius: 5px;
             margin-top: 10px;
             object-fit: cover;
             display: none;
         }
 
-        .flag-preview.active, .robot-preview.active {
+        .flag-preview.active {
             display: block;
         }
 
@@ -331,11 +341,11 @@
         .formation-select select {
             width: 100%;
             padding: 12px;
-            border: 2px solid #1a5f3a;
+            border: 2px solid #49986d;
             border-radius: 10px;
             font-size: 1em;
             background: #fff;
-            color: #1a5f3a;
+            color: #49986d;
             font-weight: 600;
             cursor: pointer;
         }
@@ -358,14 +368,14 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, #1a5f3a, #0d3d25);
+            background: linear-gradient(135deg, #49986d, #25b6dd);
             color: #fff;
         }
 
         .btn-secondary {
             background: #fff;
-            color: #1a5f3a;
-            border: 2px solid #1a5f3a;
+            color: #49986d;
+            border: 2px solid #49986d;
         }
 
         .btn:hover {
@@ -381,12 +391,14 @@
             height: 10px;
             background: repeating-linear-gradient(
                 90deg,
-                #1a5f3a 0px,
-                #1a5f3a 33.33%,
-                #fff 33.33%,
-                #fff 66.66%,
-                #1a5f3a 66.66%,
-                #1a5f3a 100%
+                #49986d 0px,
+                #49986d 25%,
+                #eda274 25%,
+                #eda274 50%,
+                #25b6dd 50%,
+                #25b6dd 75%,
+                #674719 75%,
+                #674719 100%
             );
             border-radius: 20px 20px 0 0;
         }
@@ -397,7 +409,7 @@
             padding: 15px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
-            color: #b8e6d5;
+            color: #eda274;
             font-size: 0.9em;
         }
 
@@ -408,17 +420,16 @@
 
         .bench-section {
             margin-top: 20px;
-            margin-right: 20px;
             padding: 15px;
             background: #f0f9f4;
             border-radius: 10px;
-            border: 2px dashed #1a5f3a;
+            border: 2px dashed #49986d;
         }
 
         .bench-players {
             margin-top: 10px;
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 10px;
         }
 
@@ -437,8 +448,8 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #fff, #e8e8e8);
-            border: 3px solid #1a5f3a;
+            background: linear-gradient(135deg, #25b6dd, #fff);
+            border: 3px solid #49986d;
             margin: 0 auto 5px;
             display: flex;
             align-items: center;
@@ -453,7 +464,7 @@
         }
 
         .bench-player-name {
-            color: #1a5f3a;
+            color: #49986d;
             font-size: 0.7em;
             font-weight: 600;
             word-break: break-word;
@@ -504,7 +515,7 @@
         }
 
         .modal-header {
-            color: #1a5f3a;
+            color: #49986d;
             font-size: 1.5em;
             font-weight: bold;
             margin-bottom: 20px;
@@ -521,7 +532,7 @@
 
         .modal-input-group label {
             display: block;
-            color: #1a5f3a;
+            color: #49986d;
             font-weight: 600;
             margin-bottom: 8px;
         }
@@ -529,7 +540,7 @@
         .modal-input-group input[type="text"] {
             width: 100%;
             padding: 12px;
-            border: 2px solid #1a5f3a;
+            border: 2px solid #49986d;
             border-radius: 10px;
             font-size: 1em;
         }
@@ -539,17 +550,17 @@
             width: 100%;
             padding: 12px;
             background: #f0f9f4;
-            border: 2px dashed #1a5f3a;
+            border: 2px dashed #49986d;
             border-radius: 10px;
             text-align: center;
             cursor: pointer;
             transition: all 0.3s;
-            color: #1a5f3a;
+            color: #49986d;
             font-weight: 600;
         }
 
         .modal-upload-btn:hover {
-            background: #1a5f3a;
+            background: #49986d;
             color: #fff;
         }
 
@@ -560,7 +571,7 @@
             margin: 15px auto;
             display: none;
             overflow: hidden;
-            border: 3px solid #1a5f3a;
+            border: 3px solid #49986d;
         }
 
         .modal-preview.active {
@@ -589,7 +600,7 @@
         }
 
         .modal-btn-save {
-            background: linear-gradient(135deg, #1a5f3a, #0d3d25);
+            background: linear-gradient(135deg, #49986d, #25b6dd);
             color: #fff;
         }
 
@@ -632,21 +643,29 @@
             align-items: center;
             margin-bottom: 30px;
             padding-bottom: 20px;
-            border-bottom: 4px solid #1a5f3a;
+            border-bottom: 4px solid #49986d;
         }
 
         .print-logo {
             width: 200px;
             height: 120px;
-            background: linear-gradient(135deg, #1a5f3a, #0d3d25);
+            background: linear-gradient(135deg, #49986d, #25b6dd);
             border-radius: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #fff;
             font-weight: bold;
-            font-size: 2em;
+            font-size: 1.5em;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .print-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 10px;
         }
 
         .print-title-section {
@@ -657,7 +676,7 @@
 
         .print-title {
             font-size: 2.5em;
-            color: #1a5f3a;
+            color: #49986d;
             font-weight: bold;
             margin-bottom: 10px;
         }
@@ -670,7 +689,7 @@
 
         .print-campaign {
             display: inline-block;
-            background: linear-gradient(135deg, #1a5f3a, #0d3d25);
+            background: linear-gradient(135deg, #eda274, #25b6dd);
             color: #fff;
             padding: 8px 20px;
             border-radius: 20px;
@@ -690,15 +709,15 @@
             background: #f8f8f8;
             padding: 25px;
             border-radius: 15px;
-            border: 3px solid #1a5f3a;
+            border: 3px solid #49986d;
         }
 
         .team-sheet h3 {
-            color: #1a5f3a;
+            color: #49986d;
             font-size: 1.5em;
             margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #1a5f3a;
+            border-bottom: 2px solid #49986d;
         }
 
         .team-info-item {
@@ -710,7 +729,7 @@
 
         .team-info-label {
             font-weight: 600;
-            color: #1a5f3a;
+            color: #49986d;
             font-size: 0.9em;
             margin-bottom: 5px;
         }
@@ -732,7 +751,7 @@
             background: #fff;
             border-radius: 8px;
             margin-bottom: 10px;
-            border-left: 4px solid #1a5f3a;
+            border-left: 4px solid #49986d;
         }
 
         .player-item-avatar {
@@ -769,11 +788,11 @@
             background: #f8f8f8;
             padding: 25px;
             border-radius: 15px;
-            border: 3px solid #1a5f3a;
+            border: 3px solid #49986d;
         }
 
         .print-field {
-            background: linear-gradient(180deg, #2d8f5f 0%, #1a5f3a 50%, #2d8f5f 100%);
+            background: linear-gradient(180deg, #49986d 0%, #25b6dd 50%, #49986d 100%);
             border-radius: 12px;
             padding: 30px 20px;
             position: relative;
@@ -781,31 +800,10 @@
             border: 4px solid #fff;
         }
 
-        .robot-section {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        .robot-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 10px;
-            border: 3px solid #1a5f3a;
-            object-fit: cover;
-            margin: 0 auto;
-            display: none;
-        }
-
-        .robot-image.active {
-            display: block;
-        }
-
-        .close-print, .edit-team, .download-button {
+        .close-print, .download-button {
             position: fixed;
             top: 20px;
             padding: 12px 24px;
-            background: #1a5f3a;
-            color: #fff;
             border: none;
             border-radius: 10px;
             font-weight: 600;
@@ -815,30 +813,26 @@
             z-index: 10000;
         }
 
-        .edit-team {
-            right: 800px; /* Shifted further left to avoid overlap with download-button */
-            background: linear-gradient(135deg, #0d3d25, #1a5f3a);
-        }
-
         .download-button {
             right: 140px;
-            background: linear-gradient(135deg, #1a5f3a, #0d3d25);
-
+            background: linear-gradient(135deg, #eda274, #25b6dd);
+            color: #fff;
         }
 
         .close-print {
             right: 20px;
+            background: #49986d;
+            color: #fff;
         }
 
         .download-button:hover,
-        .close-print:hover,
-        .edit-team:hover {
+        .close-print:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
         }
 
         @media print {
-            .close-print, .download-button, .edit-team {
+            .close-print, .download-button {
                 display: none;
             }
             
@@ -873,7 +867,7 @@
             }
 
             .bench-players {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
@@ -881,9 +875,9 @@
 <body>
     <div class="header">
         <div class="logo-section">
-            <img src="https://res.cloudinary.com/droybe28j/image/upload/v1759364616/FIRSTglobal_horizontal_white_1_cz3vry.png" alt="FGC LOGO" width="200" height="80" style="float:left">
+            <img src="https://res.cloudinary.com/droybe28j/image/upload/v1759364616/FIRSTglobal_horizontal_white_1_cz3vry.png" alt="FGC LOGO" width="200" height="80">
             <h1 class="main-title">⚽ FGC NIGERIA ROBOTICS TEAM</h1>
-            <p class="subtitle">FIRST Global Challenge - 5-a-Side Robotics</p>
+            <p class="subtitle">FIRST Global Challenge - 6-a-Side Robotics</p>
             <div class="campaign-badge">🤖 ROBOTICS IS A SPORT 🏆</div>
         </div>
     </div>
@@ -905,84 +899,51 @@
                 </div>
 
                 <div class="upload-section">
-                    <label style="color: #1a5f3a; font-weight: 600; margin-bottom: 10px; display: block;">Team Flag</label>
+                    <label style="color: #49986d; font-weight: 600; margin-bottom: 10px; display: block;">Team Flag</label>
                     <label for="flagUpload" class="custom-file-upload">
                         📁 Choose Flag Image
                     </label>
                     <input type="file" id="flagUpload" accept="image/*">
                     <img id="flagPreview" class="flag-preview" alt="Flag Preview">
                 </div>
-
-                <div class="upload-section">
-                    <label style="color: #1a5f3a; font-weight: 600; margin-bottom: 10px; display: block;">Robot Image</label>
-                    <label for="robotUpload" class="custom-file-upload">
-                        🤖 Choose Robot Image
-                    </label>
-                    <input type="file" id="robotUpload" accept="image/*">
-                    <img id="robotPreview" class="robot-preview" alt="Robot Preview">
-                </div>
             </div>
 
             <div class="formation-select">
-                <label style="color: #1a5f3a; font-weight: 600; margin-bottom: 5px; display: block;">Formation</label>
+                <label style="color: #49986d; font-weight: 600; margin-bottom: 5px; display: block;">Formation (with Robot)</label>
                 <select id="formation">
-                    <option value="2-2-1">2-2-1 (Balanced)</option>
-                    <option value="1-3-1">1-3-1 (Midfield)</option>
-                    <option value="2-1-2">2-1-2 (Attack)</option>
-                    <option value="3-1-1">3-1-1 (Defense)</option>
+                    <option value="2-2-1-1">2-2-1-1 (Balanced)</option>
+                    <option value="1-3-1-1">1-3-1-1 (Midfield)</option>
+                    <option value="2-1-2-1">2-1-2-1 (Attack)</option>
+                    <option value="3-1-1-1">3-1-1-1 (Defense)</option>
                 </select>
             </div>
 
             <div class="bench-section">
-                <h3 style="color: #1a5f3a; font-size: 1.2em; margin-bottom: 10px;">Bench Players</h3>
+                <h3 style="color: #49986d; font-size: 1.2em; margin-bottom: 10px;">Reserves</h3>
                 <div class="bench-players" id="benchPlayers">
                     <div class="bench-player" data-position="bench-1">
                         <div class="bench-player-avatar">
                             <span class="add-player-icon">+</span>
                         </div>
-                        <div class="bench-player-name">Bench Player</div>
+                        <div class="bench-player-name">Reserve</div>
                     </div>
                     <div class="bench-player" data-position="bench-2">
                         <div class="bench-player-avatar">
                             <span class="add-player-icon">+</span>
                         </div>
-                        <div class="bench-player-name">Bench Player</div>
+                        <div class="bench-player-name">Reserve</div>
                     </div>
                     <div class="bench-player" data-position="bench-3">
                         <div class="bench-player-avatar">
                             <span class="add-player-icon">+</span>
                         </div>
-                        <div class="bench-player-name">Bench Player</div>
+                        <div class="bench-player-name">Reserve</div>
                     </div>
                     <div class="bench-player" data-position="bench-4">
                         <div class="bench-player-avatar">
                             <span class="add-player-icon">+</span>
                         </div>
-                        <div class="bench-player-name">Bench Player</div>
-                    </div>
-                    <div class="bench-player" data-position="bench-7">
-                        <div class="bench-player-avatar">
-                            <span class="add-player-icon">+</span>
-                        </div>
-                        <div class="bench-player-name">Bench Player</div>
-                    </div>
-                    <div class="bench-player" data-position="bench-8">
-                        <div class="bench-player-avatar">
-                            <span class="add-player-icon">+</span>
-                        </div>
-                        <div class="bench-player-name">Bench Player</div>
-                    </div>
-                    <div class="bench-player" data-position="bench-9">
-                        <div class="bench-player-avatar">
-                            <span class="add-player-icon">+</span>
-                        </div>
-                        <div class="bench-player-name">Bench Player</div>
-                    </div>
-                    <div class="bench-player" data-position="bench-10">
-                        <div class="bench-player-avatar">
-                            <span class="add-player-icon">+</span>
-                        </div>
-                        <div class="bench-player-name">Bench Player</div>
+                        <div class="bench-player-name">Reserve</div>
                     </div>
                 </div>
             </div>
@@ -990,18 +951,18 @@
             <div class="upload-section">
                 <div class="info-text">
                     💡 <strong>How to add players:</strong><br>
-                    Click on any <strong>+</strong> icon on the field or bench to add a player's name and photo
+                    Click on any <strong>+</strong> icon on the field or reserves to add a player's name and photo. The 🤖 position is for your robot!
                 </div>
             </div>
 
             <div class="action-buttons">
-                <button class="btn btn-primary" id="printTeam">🖨️ Print Team</button>
+                <button class="btn btn-primary" id="printTeam">🖨️ Generate Team Sheet</button>
                 <button class="btn btn-secondary" id="resetTeam">🔄 Reset</button>
             </div>
 
             <div class="powered-by">
                 Powered by<br>
-                <strong style="color: #1a5f3a;">FGC NIGERIA 🇳🇬</strong>
+                <strong style="color: #49986d;">FGC NIGERIA 🇳🇬</strong>
             </div>
         </div>
 
@@ -1012,11 +973,11 @@
                 
                 <div class="player-zones">
                     <div class="zone">
-                        <div class="player-slot" data-position="forward">
+                        <div class="player-slot robot-slot" data-position="robot">
                             <div class="player-avatar">
-                                <span class="add-player-icon">+</span>
+                                <span class="add-player-icon">🤖</span>
                             </div>
-                            <div class="player-name">Forward</div>
+                            <div class="player-name">Robot</div>
                         </div>
                     </div>
                     <div class="zone">
@@ -1039,6 +1000,12 @@
                                 <span class="add-player-icon">+</span>
                             </div>
                             <div class="player-name">Def Left</div>
+                        </div>
+                        <div class="player-slot" data-position="def-center">
+                            <div class="player-avatar">
+                                <span class="add-player-icon">+</span>
+                            </div>
+                            <div class="player-name">Def Center</div>
                         </div>
                         <div class="player-slot" data-position="def-right">
                             <div class="player-avatar">
@@ -1081,13 +1048,12 @@
 
     <div class="print-view" id="printView">
         <button class="close-print" id="closePrint">✖ Close</button>
-        <button class="edit-team" id="editTeam">✎ Edit Team</button>
         <button class="download-button" id="downloadImage">📥 Download Image</button>
         
         <div class="print-content" id="printContent">
             <div class="print-header">
                 <div class="print-logo">
-                    <img src="https://res.cloudinary.com/droybe28j/image/upload/v1759364616/FIRSTglobal_horizontal_white_1_cz3vry.png" alt="FGC LOGO" width="200" height="80">
+                    <img src="https://res.cloudinary.com/droybe28j/image/upload/v1759364616/FIRSTglobal_horizontal_white_1_cz3vry.png" alt="FGC LOGO">
                 </div>
                 <div class="print-title-section">
                     <div class="print-title" id="printTeamName">TEAM NAME</div>
@@ -1115,22 +1081,17 @@
                     
                     <div class="team-info-item">
                         <div class="team-info-label">Formation</div>
-                        <div class="team-info-value" id="sheetFormation">2-2-1</div>
+                        <div class="team-info-value" id="sheetFormation">1-2-3 + Robot</div>
                     </div>
 
                     <div class="players-list">
                         <h3 style="font-size: 1.2em; margin-bottom: 15px;">Team Roster</h3>
                         <div id="benchPlayersList"></div>
                     </div>
-
-                    <div class="robot-section">
-                        <h3 style="font-size: 1.2em; margin-bottom: 15px;">Team Robot</h3>
-                        <img id="printRobotImage" class="robot-image" alt="Team Robot">
-                    </div>
                 </div>
 
                 <div class="print-field-container">
-                    <h3 style="color: #1a5f3a; margin-bottom: 15px; font-size: 1.3em;">Formation Lineup</h3>
+                    <h3 style="color: #49986d; margin-bottom: 15px; font-size: 1.3em;">Formation Lineup</h3>
                     <div class="print-field">
                         <div class="center-circle"></div>
                         <div class="player-zones" id="printPlayerZones"></div>
@@ -1143,8 +1104,6 @@
     <script>
         const flagUpload = document.getElementById('flagUpload');
         const flagPreview = document.getElementById('flagPreview');
-        const robotUpload = document.getElementById('robotUpload');
-        const robotPreview = document.getElementById('robotPreview');
 
         flagUpload.addEventListener('change', function(e) {
             const file = e.target.files[0];
@@ -1153,18 +1112,6 @@
                 reader.onload = function(event) {
                     flagPreview.src = event.target.result;
                     flagPreview.classList.add('active');
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-
-        robotUpload.addEventListener('change', function(e) {
-            const file = e.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(event) {
-                    robotPreview.src = event.target.result;
-                    robotPreview.classList.add('active');
                 };
                 reader.readAsDataURL(file);
             }
@@ -1261,22 +1208,26 @@
         const playerZones = document.querySelector('.player-zones');
 
         const formations = {
-            '2-2-1': [
+            '2-2-1-1': [
+                { count: 1, positions: ['robot'], isRobot: true },
                 { count: 1, positions: ['forward'] },
                 { count: 2, positions: ['mid-left', 'mid-right'] },
                 { count: 2, positions: ['def-left', 'def-right'] }
             ],
-            '1-3-1': [
+            '1-3-1-1': [
+                { count: 1, positions: ['robot'], isRobot: true },
                 { count: 1, positions: ['forward'] },
                 { count: 3, positions: ['mid-left', 'mid-center', 'mid-right'] },
                 { count: 1, positions: ['defender'] }
             ],
-            '2-1-2': [
+            '2-1-2-1': [
+                { count: 1, positions: ['robot'], isRobot: true },
                 { count: 2, positions: ['forward-left', 'forward-right'] },
                 { count: 1, positions: ['midfielder'] },
                 { count: 2, positions: ['def-left', 'def-right'] }
             ],
-            '3-1-1': [
+            '3-1-1-1': [
+                { count: 1, positions: ['robot'], isRobot: true },
                 { count: 1, positions: ['forward'] },
                 { count: 1, positions: ['midfielder'] },
                 { count: 3, positions: ['def-left', 'def-center', 'def-right'] }
@@ -1294,15 +1245,20 @@
                 line.positions.forEach(pos => {
                     const slot = document.createElement('div');
                     slot.className = 'player-slot';
+                    if (line.isRobot) {
+                        slot.classList.add('robot-slot');
+                    }
                     slot.setAttribute('data-position', pos);
                     
                     const posName = pos.split('-').map(word => 
                         word.charAt(0).toUpperCase() + word.slice(1)
                     ).join(' ');
                     
+                    const icon = line.isRobot ? '🤖' : '+';
+                    
                     slot.innerHTML = `
                         <div class="player-avatar">
-                            <span class="add-player-icon">+</span>
+                            <span class="add-player-icon">${icon}</span>
                         </div>
                         <div class="player-name">${posName}</div>
                     `;
@@ -1323,7 +1279,6 @@
         const printTeamBtn = document.getElementById('printTeam');
         const printView = document.getElementById('printView');
         const closePrintBtn = document.getElementById('closePrint');
-        const editTeamBtn = document.getElementById('editTeam');
 
         printTeamBtn.addEventListener('click', function() {
             generateTeamSheet();
@@ -1331,10 +1286,6 @@
         });
 
         closePrintBtn.addEventListener('click', function() {
-            printView.classList.remove('active');
-        });
-
-        editTeamBtn.addEventListener('click', function() {
             printView.classList.remove('active');
         });
 
@@ -1347,7 +1298,6 @@
             
             downloadImageBtn.style.display = 'none';
             closePrintBtn.style.display = 'none';
-            editTeamBtn.style.display = 'none';
             
             html2canvas(target, {
                 backgroundColor: '#ffffff',
@@ -1363,12 +1313,10 @@
                 
                 downloadImageBtn.style.display = 'block';
                 closePrintBtn.style.display = 'block';
-                editTeamBtn.style.display = 'block';
             }).catch(error => {
                 console.error('html2canvas error:', error);
                 downloadImageBtn.style.display = 'block';
                 closePrintBtn.style.display = 'block';
-                editTeamBtn.style.display = 'block';
             });
         });
 
@@ -1380,22 +1328,29 @@
             document.getElementById('printTeamName').textContent = teamName;
             document.getElementById('sheetTeamName').textContent = teamName;
             document.getElementById('sheetCoachName').textContent = coachName;
-            document.getElementById('sheetFormation').textContent = formation;
+            document.getElementById('sheetFormation').textContent = formation.replace(/-/g, '-') + ' + Robot';
 
-            const benchSlots = document.querySelectorAll('.bench-player');
+            const allSlots = document.querySelectorAll('.player-slot, .bench-player');
             const benchPlayersList = document.getElementById('benchPlayersList');
             benchPlayersList.innerHTML = '';
 
-            let benchPlayerCount = 0;
-            benchSlots.forEach(slot => {
-                const nameEl = slot.querySelector('.bench-player-name');
-                const avatarEl = slot.querySelector('.bench-player-avatar img');
-                const position = 'Team Member';
+            let playerCount = 0;
+            allSlots.forEach(slot => {
+                const isBenchPlayer = slot.classList.contains('bench-player');
+                const nameEl = slot.querySelector(isBenchPlayer ? '.bench-player-name' : '.player-name');
+                const avatarEl = slot.querySelector(isBenchPlayer ? '.bench-player-avatar img' : '.player-avatar img');
+                const position = slot.getAttribute('data-position');
                 
                 if (avatarEl) {
-                    benchPlayerCount++;
+                    playerCount++;
                     const playerItem = document.createElement('div');
                     playerItem.className = 'player-item';
+                    
+                    const posName = position === 'robot' ? 'Robot' : 
+                                   isBenchPlayer ? 'Reserve' : 
+                                   position.split('-').map(word => 
+                                       word.charAt(0).toUpperCase() + word.slice(1)
+                                   ).join(' ');
                     
                     playerItem.innerHTML = `
                         <div class="player-item-avatar">
@@ -1403,23 +1358,15 @@
                         </div>
                         <div class="player-item-info">
                             <div class="player-item-name">${nameEl.textContent}</div>
-                            <div class="player-item-position">${position}</div>
+                            <div class="player-item-position">${posName}</div>
                         </div>
                     `;
                     benchPlayersList.appendChild(playerItem);
                 }
             });
 
-            if (benchPlayerCount === 0) {
+            if (playerCount === 0) {
                 benchPlayersList.innerHTML = '<div style="color: #999; padding: 10px;">No team members added yet</div>';
-            }
-
-            const printRobotImage = document.getElementById('printRobotImage');
-            if (robotPreview.classList.contains('active')) {
-                printRobotImage.src = robotPreview.src;
-                printRobotImage.classList.add('active');
-            } else {
-                printRobotImage.classList.remove('active');
             }
 
             const printPlayerZones = document.getElementById('printPlayerZones');
@@ -1434,10 +1381,8 @@
                 document.getElementById('coachName').value = '';
                 flagPreview.classList.remove('active');
                 flagPreview.src = '';
-                robotPreview.classList.remove('active');
-                robotPreview.src = '';
-                formationSelect.value = '2-2-1';
-                updateFormation('2-2-1');
+                formationSelect.value = '2-2-1-1';
+                updateFormation('2-2-1-1');
                 
                 document.querySelectorAll('.bench-player').forEach(slot => {
                     const avatar = slot.querySelector('.bench-player-avatar');
@@ -1447,7 +1392,7 @@
                     
                     if (img) img.remove();
                     if (icon) icon.style.display = 'block';
-                    nameEl.textContent = 'Bench Player';
+                    nameEl.textContent = 'Reserve';
                 });
             }
         });
